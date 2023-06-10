@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="fevicon.ico">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="calculator">
+            <div class="screen">
+                <div class="user-input" id="user-input" type="text">0</div>
+                <div class="result" id="result" type="text">&nbsp;</div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn btn-red span-2" id="clearBtn">CLR</button>
+                <button class="btn btn-blue span-2" id="deleteBtn">DEL</button>
+
+                <button class="btn" data-type="number" id="btn-7" value="7">7</button>
+                <button class="btn" data-type="number" id="btn-8" value="8">8</button>
+                <button class="btn" data-type="number" id="btn-9" value="9">9</button>
+                <button class="btn" data-type="operator" id="remainder" value="%">&#37</button>
+                <button class="btn" data-type="number" id="btn-4" value="4">4</button>
+                <button class="btn" data-type="number" id="btn-5" value="5">5</button>
+                <button class="btn" data-type="number" id="btn-6" value="6">6</button>
+                <button class="btn" data-type="operator" id="plus" value="+">&#43</button>
+                
+                <button class="btn" data-type="number" id="btn-1" value="1">1</button>
+                <button class="btn" data-type="number" id="btn-2" value="2">2</button>
+                <button class="btn" data-type="number" id="btn-3" value="3">3</button>
+                <button class="btn" data-type="operator" id="minus" value="-">&#45</button>
+                
+                <button class="btn" data-type="operator" id="multiply" value="x">&#215</button>
+                <button class="btn" data-type="number" id="btn-0" value="0">0</button>
+                <button class="btn" data-type="decimal" id="decimal" value=".">.</button>
+                <button class="btn" data-type="equal" id="equals" value="=">&#61</button>
+            </div>
+            <!-- <p class="text">Calculator</p> -->
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://github.com/frustratedProton" target="_blank">
+            <i class="fab fa-github"></i></a>
+        <p>Aryan Singh</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
