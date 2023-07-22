@@ -1,18 +1,24 @@
 :root {
-    --background:#2D3E47;
+    --background: #e3ede5;
     --font: #222;
     --border: #333;
-    --screen: #eee;
-    --calculator: #3b505b;
+    --screen: #c18593;
+    --calculator: #333c52;
     --btn: #eee;
     --btn-hover: #ddd;
     --btn-active: #ccc;
-    --btn-red: #993466;
-    --btn-red-hover: #8c2056;
-    --btn-red-active: #6e2047;
-    --btn-blue: #AEF8C7;
-    --btn-blue-hover: #73c990;
-    --btn-blue-active: #4d9164;
+    --btn-clr: #e2d0de;
+    --btn-clr-hover: #a7719b;
+    --btn-clr-active: #6e4465;
+    --btn-del: #8d7e58;
+    --btn-del-hover: #a79872;
+    --btn-del-active: #8d7e58;
+    --btn-operator: #b34db2;
+    --btn-operator-active: #ca82c9;
+    --btn-operator-hover: #a145a0;
+    --btn-equals: #e8cfed;
+    --btn-equals-hover: #d3a2dc;
+    --btn-equals-active: #963fa7;
 }
 
 *,
@@ -62,7 +68,7 @@ button {
     border-radius: 15px;
     padding: 20px;
     background-color: var(--calculator);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: 26px 14px 21px 6px rgba(0,0,0,0.1);
 }
 
 .calculator > p {
@@ -85,12 +91,12 @@ button {
     word-break: break-all;
 }
 
-.user-input {
+.result {
     min-height: 32px;
     font-size: 20px;
 }
 
-.result {
+.user-input {
     min-height: 64px;
     font-size: 40px;
 }
@@ -115,9 +121,29 @@ button {
     font-size: 20px;
 }
 
-button.equal {
-    grid-column: 3 / 5;
-    border-radius: 2.5rem;
+#btn-operator {
+    background-color: var(--btn-operator);
+}
+
+#btn-operator:hover {
+    background-color: var(--btn-operator-hover);
+}
+
+
+#btn-operator:active {
+    background-color: var(--btn-operator-active);
+}
+
+#equal {
+    background-color: var(--btn-equals);
+}
+
+#equal:hover {
+    background-color: var(--btn-equals-hover);
+}
+
+#equal:active {
+    background-color: var(--btn-equals-active);
 }
 
 .btn:hover {
@@ -128,28 +154,28 @@ button.equal {
     background-color: var(--btn-active);
 }
 
-.btn-red {
-    background-color: var(--btn-red);
+.btn-clr {
+    background-color: var(--btn-clr);
 }
 
-.btn-red:hover {
-    background-color: var(--btn-red-hover);
+.btn-clr:hover {
+    background-color: var(--btn-clr-hover);
 }
 
-.btn-red:active {
-    background-color: var(--btn-red-active);
+.btn-clr:active {
+    background-color: var(--btn-clr-active);
 }
 
-.btn-blue {
-    background-color: var(--btn-blue);
+.btn-del {
+    background-color: var(--btn-del);
 }
 
-.btn-blue:hover {
-    background-color: var(--btn-blue-hover);
+.btn-del:hover {
+    background-color: var(--btn-del-hover);
 }
 
-.btn-blue:active {
-    background-color: var(--btn-blue-active);
+.btn-del:active {
+    background-color: var(--btn-del-active);
 }
 
 footer {
@@ -166,11 +192,11 @@ footer {
 }
 
 footer > p {
-    color: #7BA7C2;
+    color: #0d0d0d;
 }
 
 .fa-github {
-    color: #7BA7C2;
+    color: #000000;
     font-size: 24px;
     transition: transform 0.3s ease-in-out;
 }
